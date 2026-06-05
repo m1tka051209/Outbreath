@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F5F7FA</color>
+
+    <color name="wave_primary">#3EAA95</color>
+    <color name="wave_secondary">#6080A8D6</color>
+
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+
+    <color name="accent">#2A9D8F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="progress_bg">#007497</color>
+</resources>

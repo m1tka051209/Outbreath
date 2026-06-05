@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Outbreath</string>
+    <string name="tv_training">Вы хотите завершить тренировку?</string>
+    <string name="btn_start">Начать тренировку</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="btn_end">Завершить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_inhale">Длительность вдоха, сек.</string>
+    <string name="tv_delay_inhale">Длительность задержки на вдохе, сек.</string>
+    <string name="tv_exhale">Длительность выдоха, сек.</string>
+    <string name="tv_delay_exhale">Длительность задержки на выдохе, сек.</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_profile">Профиль</string>
+    <string name="tv_version">Версия 1.0</string>
+</resources>

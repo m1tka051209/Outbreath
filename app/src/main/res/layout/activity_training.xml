@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".TrainingActivity">
+
+    <ru.outbreath.app.loader.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:layout_marginTop="0dp"
+        android:id="@+id/pb_training"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:progressBackgroundTint="@color/progress_bg"
+        android:progressTint="@color/progress_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_phase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66FFFFFF"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="42sp"
+            app:layout_constraintBottom_toBottomOf="@+id/waveView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_seconds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66FFFFFF"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/waveView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_phase" />
+
+        <!--        <ProgressBar-->
+        <!--            style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="3dp"-->
+        <!--            android:id="@+id/pb_seconds"/>-->
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
